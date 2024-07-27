@@ -1,7 +1,7 @@
 def getAscendingSubsequences(entries):
     subsequences, sequence = [], []
     for entry in entries:
-        if not sequence or entry >= sequence[-1]:
+        if not sequence or entry > sequence[-1]:
             sequence.append(entry)
         else:
             subsequences.append(sequence)
